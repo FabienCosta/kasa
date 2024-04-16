@@ -1,0 +1,14 @@
+.banner {
+  background-image: url("../../assets/Banner-img.png");
+  background-size: cover;
+  background-position: center;
+  height: 10em;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 5% 0% 0% 5%;
+  color: white;
+  box-shadow: grey 0px 0px 10px 0px;
+}

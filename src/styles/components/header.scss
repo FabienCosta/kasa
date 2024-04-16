@@ -1,0 +1,17 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  &-link {
+    display: inline-block;
+    margin: 5%;
+    text-decoration: none;
+  }
+}
