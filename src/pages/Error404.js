@@ -1,9 +1,14 @@
 import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Error from "../components/Error";
 
 const Error404 = () => {
   return (
     <div>
-      <h1>error 404</h1>
+      <Header />
+      <Error />
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,26 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6060;
+    font-size: 15em;
+    margin-top: 0%;
+  }
+
+  &-text {
+    color: #ff6060;
+    font-size: 2em;
+    margin-top: -3em;
+  }
+
+  &-link {
+    color: black;
+    margin-bottom: 2em;
+  }
+}
