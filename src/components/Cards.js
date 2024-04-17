@@ -12,7 +12,7 @@ const Cards = () => {
             key={logement.id}
             className="card-img"
           />
-          {/* <p className="card-text">{logement.title}</p> */}
+          <p className="card-text">{logement.title}</p>
         </div>
       ))}
     </div>

@@ -1,13 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
     <div>
-      <h1>hello</h1>
-      <img
-        src="\\wsl.localhost\Ubuntu\root\fabien\project\kasa-openclassrooms\src\assets\kalen-emsley-Bkci_8qcdvQ-unsplash 2.png"
-        alt="sea img"
-      />
+      <Header />
+      <Footer />
     </div>
   );
 };
