@@ -1,0 +1,31 @@
+.rental {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: auto;
+  width: 90%;
+
+  &-title {
+    color: #ff6060;
+  }
+
+  &-place {
+    color: black;
+  }
+
+  &-tag {
+    background-color: #ff6060;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+  }
+
+  &-name {
+    color: #ff6060;
+  }
+
+  &-stars {
+    color: #ff6060;
+  }
+}
