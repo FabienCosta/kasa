@@ -1,16 +1,20 @@
 import React from "react";
 
-const RentalInfo = ({ logements }) => {
+const RentalInfo = ({ logement }) => {
   return (
     <div className="rental">
       <div className="rental-box">
-        <h2 className="rental-title">cozi loft</h2>
-        <p className="rental-place">paris, idf</p>
-        <p className="rental-tag">cozy</p>
+        <h2 className="rental-title">{logement.title}</h2>
+        <p className="rental-place">{logement.location}</p>
+        {logement.tags.map((tag, index) => (
+          <p key={index} className="rental-tag">
+            {tag}
+          </p>
+        ))}
       </div>
       <div className="rental-box">
-        <p className="rental-name">henry dupond</p>
-        <p className="rental-stars">5 etoiles</p>
+        <p className="rental-name">{logement.host.name}</p>
+        <p className="rental-stars">{logement.rating}</p>
       </div>
     </div>
   );

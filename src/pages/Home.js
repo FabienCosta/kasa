@@ -9,7 +9,6 @@ const Home = () => {
       <Header />
       <Banner />
       <Cards />
-
       <Footer />
     </div>
   );

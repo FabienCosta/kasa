@@ -14,11 +14,13 @@
   }
 
   &-tag {
+    display: inline-block;
     background-color: #ff6060;
     color: white;
     border-radius: 10px;
     text-align: center;
-    width: 20%;
+    margin: 5px;
+    width: 15%;
   }
 
   &-name {
