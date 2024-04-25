@@ -31,3 +31,18 @@
     color: #ff6060;
   }
 }
+
+// ? Responsive
+
+@media screen and (max-width: 768px) {
+  .rental {
+    grid-template-columns: 1fr;
+    &-tag {
+      width: 35%;
+    }
+  }
+
+  .bbox {
+    flex-direction: row;
+  }
+}

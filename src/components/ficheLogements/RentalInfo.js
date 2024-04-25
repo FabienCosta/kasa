@@ -12,7 +12,7 @@ const RentalInfo = ({ logement }) => {
           </p>
         ))}
       </div>
-      <div className="rental-box">
+      <div className="rental-box bbox">
         <p className="rental-name">{logement.host.name}</p>
         <p className="rental-stars">{logement.rating}</p>
       </div>

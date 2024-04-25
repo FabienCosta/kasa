@@ -2,13 +2,16 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Collapse from "../components/Collapse";
-import lala from "../data/collapses.json";
+import dataCollapse from "../data/collapses.json";
 
 const About = () => {
   return (
     <div>
       <Header />
-      <Collapse lala={lala} />
+      <div className="collapse-banner"></div>
+      {dataCollapse.map((item, index) => {
+        return <Collapse dataCollapse={dataCollapse} />;
+      })}
       <Footer />
     </div>
   );

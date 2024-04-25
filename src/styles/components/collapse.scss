@@ -41,3 +41,10 @@
     margin-bottom: 500px;
   }
 }
+
+// ? Responsive
+@media screen and (max-width: 768px) {
+  .collapse-banner {
+    height: 10em;
+  }
+}

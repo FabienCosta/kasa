@@ -30,3 +30,20 @@
     // }
   }
 }
+
+// ? Responsive
+@media screen and (max-width: 768px) {
+  .carrousel-img {
+    height: 20em;
+  }
+  .carrousel-arrow {
+    height: 90%;
+    &-leftArrow {
+      height: 3em;
+    }
+
+    &-rightArrow {
+      height: 3em;
+    }
+  }
+}
