@@ -26,9 +26,32 @@
   &-text {
     border: 1p solid red;
     position: absolute;
-    margin: 10% 0% 0% -5%;
+    margin: -5% 0% 0% 0%;
     background-color: rgba(0, 0, 0, 0.1);
     width: 20%;
     color: white;
+  }
+}
+
+//? Responsive
+
+@media screen and (max-width: 1023px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+    .card {
+      width: 100%;
+      &-img {
+        width: 100%;
+      }
+      &-text {
+        margin: -15% 0% 0% 0%;
+        width: 60%;
+      }
+    }
   }
 }

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import letfArrow from "../../assets/arrow_left.png";
 import rightArrow from "../../assets/arrow_right.png";
-
+// ! bien relire et comprendre le code generer par le prof
 const Carrousel = ({ slides }) => {
-  // console.log(slides);
   const lenght = slides.length;
   const [current, setCurrent] = useState(0);
   const nextSlide = () => {

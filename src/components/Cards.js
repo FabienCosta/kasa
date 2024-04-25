@@ -13,7 +13,7 @@ const Cards = () => {
             }}
           >
             <img src={logement.cover} alt="" className="card-img" />
-            {/* <p className="card-text">{logement.title}</p> */}
+            <p className="card-text">{logement.title}</p>
           </Link>
         </div>
       ))}

@@ -22,3 +22,15 @@
 .nav-active {
   color: #ff6060;
 }
+
+// ? Responsive
+
+@media screen and (max-width: 1023px) {
+  .header-logo {
+    width: 60%;
+  }
+  .header-links {
+    display: inline-block;
+    font-size: 75%;
+  }
+}

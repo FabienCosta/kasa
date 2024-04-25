@@ -24,3 +24,21 @@
     border-radius: 20px;
   }
 }
+
+// ? Responsive
+
+@media screen and (max-width: 1023px) {
+  .banner {
+    height: 8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 6em;
+
+    &-text {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+}
