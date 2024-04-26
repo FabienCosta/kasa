@@ -8,7 +8,7 @@
 
   &-img {
     object-fit: cover;
-    width: 100%;
+    width: 80em;
     height: 30em;
     border-radius: 20px;
   }
@@ -34,16 +34,17 @@
 // ? Responsive
 @media screen and (max-width: 768px) {
   .carrousel-img {
-    height: 20em;
+    height: 15em;
+    width: 19em;
   }
   .carrousel-arrow {
     height: 90%;
     &-leftArrow {
-      height: 3em;
+      height: 2em;
     }
 
     &-rightArrow {
-      height: 3em;
+      height: 2em;
     }
   }
 }

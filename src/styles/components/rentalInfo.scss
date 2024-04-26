@@ -1,5 +1,4 @@
 .rental {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: auto;
@@ -22,9 +21,24 @@
     margin: 5px;
     width: 15%;
   }
+  .bbox {
+    align-items: end;
+  }
+  .rental-id {
+    display: flex;
+    align-items: center;
+  }
+
+  &-img {
+    object-fit: cover;
+    border-radius: 50px;
+    width: 10%;
+    height: 100%;
+  }
 
   &-name {
     color: #ff6060;
+    width: 50%;
   }
 
   &-stars {
@@ -40,9 +54,14 @@
     &-tag {
       width: 35%;
     }
-  }
 
-  .bbox {
-    flex-direction: row;
+    &-name {
+      width: 100%;
+    }
+
+    .bbox {
+      display: flex;
+      flex-direction: row-reverse;
+    }
   }
 }

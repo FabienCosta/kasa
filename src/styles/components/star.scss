@@ -1,0 +1,16 @@
+.rank-box {
+  display: flex;
+  align-items: end;
+}
+
+// ? Responsive
+@media screen and (max-width: 768px) {
+  .rate-contenair {
+    width: 60%;
+    margin-bottom: 1em;
+  }
+
+  .etoile {
+    height: 1em;
+  }
+}

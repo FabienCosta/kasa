@@ -1,6 +1,8 @@
 import React from "react";
+import Star from "./Star";
 
 const RentalInfo = ({ logement }) => {
+  console.log(logement);
   return (
     <div className="rental">
       <div className="rental-box">
@@ -13,8 +15,15 @@ const RentalInfo = ({ logement }) => {
         ))}
       </div>
       <div className="rental-box bbox">
-        <p className="rental-name">{logement.host.name}</p>
-        <p className="rental-stars">{logement.rating}</p>
+        <div className="rental-id">
+          <p className="rental-name">{logement.host.name}</p>
+          <img
+            className="rental-img"
+            src={logement.host.picture}
+            alt={logement.host.name}
+          />
+        </div>
+        <Star rank={logement.rating} />
       </div>
     </div>
   );
