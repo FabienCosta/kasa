@@ -5,6 +5,7 @@ import Carrousel from "../components/ficheLogements/Carrousel";
 import RentalInfo from "../components/ficheLogements/RentalInfo";
 import { useParams } from "react-router-dom";
 import datalodging from "../data/logements.json";
+import Collapsed from "../components/Collapsed";
 import Collapse from "../components/Collapse";
 
 const Lodging = () => {
@@ -17,7 +18,7 @@ const Lodging = () => {
       <Header />
       <Carrousel slides={logement.pictures} />
       <RentalInfo logement={logement} />
-      <Collapse dataCollapse={logement} id={id} />
+      <Collapsed data={logement} equipement={logement.equipments} />
       <Footer />
     </div>
   );

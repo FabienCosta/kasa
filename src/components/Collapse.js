@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-const Collapse = ({ dataCollapse, id }) => {
+const Collapse = ({ data, id }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleOpen = (index) =>
@@ -16,11 +16,9 @@ const Collapse = ({ dataCollapse, id }) => {
           className="collapse-box"
           onClick={() => toggleOpen(id)}
         >
-          {dataCollapse.title}
+          {data.title}
           <FontAwesomeIcon icon={faChevronUp} className="collapse-icon" />
-          {openIndex === id && (
-            <span className="collapse-text">{dataCollapse.content}</span>
-          )}
+          {openIndex === id && <span className="collapse-text">{data}</span>}
         </button>
       </div>
     </div>

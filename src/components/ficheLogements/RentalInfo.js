@@ -2,7 +2,6 @@ import React from "react";
 import Star from "./Star";
 
 const RentalInfo = ({ logement }) => {
-  console.log(logement);
   return (
     <div className="rental">
       <div className="rental-box">
