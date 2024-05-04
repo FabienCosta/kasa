@@ -33,12 +33,13 @@
   }
   &-icon {
     font-size: 1.5em;
+    align-items: end;
   }
 
   &-text {
-    background-color: grey;
-    width: 45em;
-    padding-bottom: 2em;
+    background-color: #fbfbfb;
+    width: 70%;
+    margin: -1% 0% 0% 0%;
   }
 }
 
