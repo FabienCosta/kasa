@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Collaosep = ({ data, equipement, id }) => {
+const Collaosep = ({ data, content, description, equipements }) => {
   const [isDescriptionCollapsed, setIsDescriptionCollapsed] = useState(true);
   const [isEquipmentCollapsed, setIsEquipmentCollapsed] = useState(true);
 
@@ -16,7 +16,7 @@ const Collaosep = ({ data, equipement, id }) => {
     <div className="col">
       <div className="col-box">
         <button onClick={toggleDescriptionCollapse} className="col-box-button">
-          Description
+          {description.title}
         </button>
         {!isDescriptionCollapsed && (
           <div className="col-box-text">{data.description}</div>
@@ -24,11 +24,9 @@ const Collaosep = ({ data, equipement, id }) => {
       </div>
       <div className="col-box">
         <button onClick={toggleEquipmentCollapse} className="col-box-button">
-          Equipements
+          {equipements.title}
         </button>
-        {!isEquipmentCollapsed && (
-          <div className="col-box-text">{equipement}</div>
-        )}
+        {!isEquipmentCollapsed && <div className="col-box-text">{content}</div>}
       </div>
     </div>
   );
