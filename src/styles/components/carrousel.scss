@@ -32,6 +32,12 @@
 }
 
 // ? Responsive
+@media screen and (min-width: 1550px) {
+  .carrousel-img {
+    width: 110em;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .carrousel-img {
     height: 15em;

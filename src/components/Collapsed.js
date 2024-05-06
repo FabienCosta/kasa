@@ -2,34 +2,28 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-const Collaosep = ({ data, content, description, equipements }) => {
-  const [isDescriptionCollapsed, setIsDescriptionCollapsed] = useState(true);
-  const [isEquipmentCollapsed, setIsEquipmentCollapsed] = useState(true);
+const Collapsed = ({ data, content }) => {
+  const [isOpen, setIsOpen] = useState(true);
 
-  const toggleDescriptionCollapse = () => {
-    setIsDescriptionCollapsed(!isDescriptionCollapsed);
-  };
-
-  const toggleEquipmentCollapse = () => {
-    setIsEquipmentCollapsed(!isEquipmentCollapsed);
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
     <div className="col">
       <div className="col-box">
-        <button onClick={toggleDescriptionCollapse} className="col-box-button">
-          <span className="col-box-title">{description.title}</span>
+        <button onClick={toggleOpen} className="col-box-button">
+          <span className="col-box-title">{data}</span>
 
           <FontAwesomeIcon
-            icon={isDescriptionCollapsed ? faChevronUp : faChevronDown}
+            icon={isOpen ? faChevronUp : faChevronDown}
             className="col-box-icon"
           />
         </button>
-        {!isDescriptionCollapsed && (
-          <div className="col-box-text">{data.description}</div>
-        )}
+        {!isOpen && <div className="col-box-text">{content}</div>}
       </div>
-      <div className="col-box">
+
+      {/* <div className="col-box">
         <button onClick={toggleEquipmentCollapse} className="col-box-button">
           <span className="col-box-title">{equipements.title}</span>
 
@@ -39,9 +33,9 @@ const Collaosep = ({ data, content, description, equipements }) => {
           />
         </button>
         {!isEquipmentCollapsed && <div className="col-box-text">{content}</div>}
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default Collaosep;
+export default Collapsed;

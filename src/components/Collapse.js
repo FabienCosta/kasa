@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-const Collapseoo = ({ data, content }) => {
+const Collapse = ({ data, content }) => {
   // console.log(data);
   // console.log(equipement);
   const [openIndex, setOpenIndex] = useState(null);
@@ -24,4 +24,4 @@ const Collapseoo = ({ data, content }) => {
   );
 };
 
-export default Collapseoo;
+export default Collapse;

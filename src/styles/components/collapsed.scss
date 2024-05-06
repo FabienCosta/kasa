@@ -1,14 +1,26 @@
-.col {
+.lodging-box {
   display: grid;
-  grid-gap: 100px;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.collapse-value {
+  margin: auto;
+  width: 70%;
+}
+
+.col {
   margin: 2% auto 5% auto;
   grid-template-columns: 1fr 1fr;
-  width: 90%;
+  width: 80%;
 
   &-box {
     &-button {
       text-align: start;
-      font-size: large;
+      font-size: 1em;
       background-color: #ff6060;
       color: white;
       width: 100%;
@@ -41,7 +53,12 @@
 
     &-box {
       &-button {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
         height: 2em;
+        font-size: 1em;
+        padding: 0% 5% 0% 5%;
       }
     }
   }

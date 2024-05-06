@@ -11,24 +11,19 @@ const Lodging = () => {
   // permet de recuperer la bonne fiche par l'id
   const { id } = useParams();
   const logement = datalodging.find((logement) => logement.id === id);
-  const description = {
-    title: "Description",
-  };
-  const equipements = {
-    title: "Equipements",
-  };
+  const equipements = logement.equipments.map((equipement) => {
+    return <li>{equipement}</li>;
+  });
 
   return (
     <div>
       <Header />
       <Carrousel slides={logement.pictures} />
       <RentalInfo logement={logement} />
-      <Collapsed
-        data={logement}
-        description={description}
-        equipements={equipements}
-        content={logement.equipments}
-      />
+      <div className="lodging-box">
+        <Collapsed data={"Description"} content={logement.description} />
+        <Collapsed data={"Equipements"} content={equipements} />
+      </div>
       <Footer />
     </div>
   );
