@@ -7,6 +7,7 @@ import Error404 from "./Error404";
 function App() {
   return (
     <div>
+      {/* ? utilisation de react router dom pour simuler les routes de la SPA */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
