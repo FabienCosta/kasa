@@ -10,6 +10,7 @@ import Collapsed from "../components/Collapsed";
 const Lodging = () => {
   // permet de recuperer la bonne fiche par l'id
   const { id } = useParams();
+  // ? je recupere la fiche correspondant a l'id dans le fichier json
   const logement = datalodging.find((logement) => logement.id === id);
   // ? je map sur les equipements pour les afficher dans une liste
   const equipements = logement.equipments.map((equipement) => {

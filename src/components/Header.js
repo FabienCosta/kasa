@@ -8,7 +8,7 @@ const Header = () => {
       <img src={logo} alt="logo kasa" className="header-logo" />
       <ul className="header-links">
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-          <li className="header-link">Acceuil</li>
+          <li className="header-link">Accueil</li>
         </NavLink>
         <NavLink
           to="/about"

@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Lodging from "./Lodging";
-import Error404 from "./Error404";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Lodging from "./pages/Lodging";
+import Error404 from "./pages/Error404";
 
 function App() {
   return (
