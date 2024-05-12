@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+
 import Carrousel from "../components/ficheLogements/Carrousel";
 import RentalInfo from "../components/ficheLogements/RentalInfo";
 import { useParams } from "react-router-dom";
@@ -24,7 +23,6 @@ const Lodging = () => {
 
   return (
     <div>
-      <Header />
       <Carrousel slides={logement.pictures} />
       <RentalInfo logement={logement} />
       <div className="lodging-box">
@@ -32,7 +30,6 @@ const Lodging = () => {
         <Collapsed data={"Description"} content={logement.description} />
         <Collapsed data={"Equipements"} content={equipements} />
       </div>
-      <Footer />
     </div>
   );
 };
