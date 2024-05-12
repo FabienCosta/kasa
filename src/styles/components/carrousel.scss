@@ -13,6 +13,13 @@
     border-radius: 20px;
   }
 
+  &-number {
+    background-color: rgb(136, 136, 136, 0.2);
+    position: absolute;
+    bottom: 1%;
+    font-size: 2em;
+  }
+
   &-arrow {
     position: absolute;
     width: 100%;

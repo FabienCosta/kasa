@@ -29,20 +29,28 @@ const Carrousel = ({ slides }) => {
           </div>
         );
       })}
-      <div className="carrousel-arrow">
-        <img
-          src={letfArrow}
-          alt="arrow left"
-          onClick={prevSlide}
-          className="carrousel-arrow-leftArrow"
-        />
-        <img
-          src={rightArrow}
-          alt="arrow right"
-          onClick={nextSlide}
-          className="carrousel-arrow-rightArrow"
-        />
-      </div>
+      {/* conditions qui verifient si il y a moins d'une img par array et enleve les fleches et le numéro si c'est le cas */}
+      {slides.length > 1 && (
+        <p className="carrousel-number">
+          {current + 1} / {slides.length}
+        </p>
+      )}
+      {slides.length > 1 && (
+        <div className="carrousel-arrow">
+          <img
+            src={letfArrow}
+            alt="arrow left"
+            onClick={prevSlide}
+            className="carrousel-arrow-leftArrow"
+          />
+          <img
+            src={rightArrow}
+            alt="arrow right"
+            onClick={nextSlide}
+            className="carrousel-arrow-rightArrow"
+          />
+        </div>
+      )}
     </div>
   );
 };
