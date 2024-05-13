@@ -2,10 +2,10 @@
   background-color: black;
   text-align: center;
   padding: 1% 0% 1% 0%;
-}
 
-p {
-  color: white;
+  &-text {
+    color: white;
+  }
 }
 
 // ? Responsive

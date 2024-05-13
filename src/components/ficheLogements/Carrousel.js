@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import letfArrow from "../../assets/arrow_left.png";
 import rightArrow from "../../assets/arrow_right.png";
-// ! bien relire et comprendre le code generer par le prof
+
 const Carrousel = ({ slides }) => {
   const lenght = slides.length;
   const [current, setCurrent] = useState(0);
@@ -24,7 +24,11 @@ const Carrousel = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide} alt="slides" className="carrousel-img" />
+              <img
+                src={slide}
+                alt="slides"
+                className={`carrousel-img ${index === current ? "active" : ""}`}
+              />
             )}
           </div>
         );

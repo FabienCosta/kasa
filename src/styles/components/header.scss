@@ -6,21 +6,29 @@
   padding: 2% 0% 2% 0%;
 
   &-links {
-    text-align: end;
+    display: flex;
+    justify-content: end;
     list-style-type: none;
-    font-weight: bolder;
+    gap: 2%;
+    font-weight: 500;
     font-size: large;
   }
 
   &-link {
+    color: black;
     display: inline-block;
-    margin: 5%;
-    text-decoration: none;
+    font-size: 1.3em;
+    margin: 0% 0% 2% 0%;
   }
 }
 
 .nav-active {
-  color: #ff6060;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+}
+
+.nav-active:focus {
+  text-decoration-line: underline;
 }
 
 // ? Responsive
@@ -32,5 +40,21 @@
   .header-links {
     display: inline-block;
     font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    &-link {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (max-width: 773px) {
+  .header {
+    &-link {
+      font-size: 1.5em;
+    }
   }
 }

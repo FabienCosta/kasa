@@ -14,7 +14,7 @@ const Header = () => {
           to="/about"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li className="header-link">A propos</li>
+          <li className="header-link">A Propos</li>
         </NavLink>
       </ul>
     </div>
