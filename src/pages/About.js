@@ -7,7 +7,7 @@ import imgBanner from "../assets/kalen-emsley.png";
 const About = () => {
   return (
     <div>
-      <Banner img={imgBanner} />
+      <Banner img={imgBanner} title={""} styleText={true} />
       <div className="collapse-banner"></div>
 
       <div className="collapse-value">

@@ -10,7 +10,7 @@ const Home = () => {
       <Banner img={imgBanner} title={"Chez vous, partout et ailleurs"} />
       <div className="card-box">
         {logements.map((logement, id) => (
-          <div className="card" key={id}>
+          <div className="card-box-link" key={id}>
             <Link
               to={{
                 pathname: `/lodging/${logement.id}`,

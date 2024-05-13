@@ -1,19 +1,9 @@
-// import { Link } from "react-router-dom";
-// import logements from "../data/logements.json";
+import React from "react";
 
 const Cards = ({ cover, title }) => {
   return (
-    <div>
-      {/* {logements.map((logement, id) => (
-        <div className="card" key={id}>
-          <Link
-            to={{
-              pathname: `/lodging/${logement.id}`,
-              state: { logement: logement },
-            }}
-          ></Link>
-        </div>
-      ))} */}
+    <div className="card">
+      <div className="cover-gradient"></div>
       <img src={cover} alt="" className="card-img" />
       <p className="card-text">{title}</p>
     </div>

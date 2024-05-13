@@ -1,9 +1,9 @@
 import React from "react";
 
-const Banner = ({ img, title }) => {
+const Banner = ({ img, title, styleText }) => {
   return (
     <div className="banner">
-      <h2 className="banner-title">{title}</h2>
+      <h2 className={styleText ? "" : "banner-title"}>{title}</h2>
       <img src={img} alt="banniere" className="banner-img" />
     </div>
   );

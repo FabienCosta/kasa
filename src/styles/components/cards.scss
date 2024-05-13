@@ -1,57 +1,94 @@
 .card-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
   background-color: #eaeaea;
   border-radius: 20px;
-  margin: 3% 5% 5% 5%;
-  padding: 2%;
-  height: 100%;
+  margin: 3% 5% 3% 5%;
+
+  &-link {
+    display: grid;
+    width: 90%;
+    height: 90%;
+    padding: 5% 0% 5% 0%;
+  }
 }
 
 .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   color: black;
-  margin: 10% 0% 0% 0%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  // overflow: hidden;
   &-img {
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 100%;
-    width: 90%;
+    width: 100%;
   }
 
   &-text {
-    border: 1p solid red;
     position: absolute;
-    margin: -5% 0% 0% 0%;
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 20%;
+    margin: -22% 0% 0% 0%;
+    padding: 0% 0% 0% 1%;
+    width: 70%;
     color: white;
+    border-radius: 20px;
   }
+}
+
+.cover-gradient {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 //? Responsive
 
 @media screen and (max-width: 1023px) {
+  .card-box {
+    grid-template-columns: 1fr 1fr;
+  }
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .card {
+    width: 100%;
+    &-img {
+      width: 100%;
+    }
+    &-text {
+      margin: -15% 0% 0% 0%;
+      width: 70%;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
-  .cards-container {
-    grid-template-columns: repeat(1, 1fr);
-    .card {
+  .card-box {
+    grid-template-columns: 1fr;
+    background-color: #f7f7f7;
+
+    &-link {
       width: 100%;
-      &-img {
-        width: 100%;
-      }
-      &-text {
-        margin: -15% 0% 0% 0%;
-        width: 60%;
-      }
+    }
+  }
+
+  .card {
+    width: 100%;
+    &-img {
+      width: 100%;
+    }
+
+    &-text {
+      margin: -18% 0% 0% 0%;
+      width: 90%;
+      font-size: 1em;
     }
   }
 }

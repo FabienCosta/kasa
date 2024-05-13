@@ -6,6 +6,7 @@
   padding: 2% 0% 2% 0%;
 
   &-links {
+    border: 1px solid red;
     display: flex;
     justify-content: end;
     list-style-type: none;
@@ -17,7 +18,7 @@
   &-link {
     color: black;
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin: 0% 0% 2% 0%;
   }
 }
@@ -53,8 +54,26 @@
 
 @media screen and (max-width: 773px) {
   .header {
+    border: 1px solid red;
+    display: flex;
     &-link {
-      font-size: 1.5em;
+      font-size: 2em;
+    }
+
+    &-logo {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .header {
+    &-link {
+      font-size: 1em;
+    }
+
+    &-logo {
+      width: 30%;
     }
   }
 }
