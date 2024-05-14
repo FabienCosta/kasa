@@ -8,13 +8,13 @@
 
   &-img {
     object-fit: cover;
-    width: 90em;
     height: 30em;
+    width: 100%;
     border-radius: 20px;
   }
 
   &-number {
-    background-color: rgb(136, 136, 136, 0.2);
+    color: white;
     position: absolute;
     bottom: 1%;
     font-size: 2em;
@@ -32,9 +32,6 @@
 
 // ? Responsive
 @media screen and (min-width: 1023px) {
-  .carrousel-img {
-    width: 110em;
-  }
 }
 
 @media screen and (max-width: 768px) {

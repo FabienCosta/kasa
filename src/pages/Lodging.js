@@ -17,8 +17,8 @@ const Lodging = () => {
     return <Error404 />;
   }
   // ? je map sur les equipements pour les afficher dans une liste
-  const equipements = logement.equipments.map((equipement) => {
-    return <li>{equipement}</li>;
+  const equipements = logement.equipments.map((equipement, index) => {
+    return <li key={index}>{equipement}</li>;
   });
 
   return (

@@ -14,18 +14,18 @@ const Collapsed = ({ data, content }) => {
   return (
     <div className="col">
       <div className="col-box">
-      {/* au clic je passe la function dans le jsx */}
+        {/* au clic je passe la function dans le jsx */}
         <button onClick={toggleOpen} className="col-box-button">
-        {/* j'affiche les data provenant des props */}
+          {/* j'affiche les data provenant des props */}
           <span className="col-box-title">{data}</span>
 
           <FontAwesomeIcon
             icon={isOpen ? faChevronUp : faChevronDown}
-            className="col-box-icon"
+            className={`col-box-icon ${isOpen ? "rotate" : ""}`}
           />
         </button>
         {/* quand le hook est open j'affiche une div contenant les infos passer dans la props */}
-        {!isOpen && <div className="col-box-text">{content}</div>}
+        <div className={`col-box-text ${!isOpen ? "open" : ""}`}>{content}</div>
       </div>
     </div>
   );

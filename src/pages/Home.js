@@ -7,7 +7,7 @@ import logements from "../data/logements.json";
 const Home = () => {
   return (
     <div>
-      <Banner img={imgBanner} title={"Chez vous,partout et ailleurs"} />
+      <Banner img={imgBanner} title={"Chez vous, partout et ailleurs"} />
       <div className="card-box">
         {logements.map((logement, id) => (
           <div className="card-box-link" key={id}>
