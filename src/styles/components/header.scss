@@ -6,7 +6,6 @@
   padding: 2% 0% 2% 0%;
 
   &-links {
-    border: 1px solid red;
     display: flex;
     justify-content: end;
     list-style-type: none;
@@ -26,6 +25,7 @@
 .nav-active {
   display: inline-block;
   border-bottom: 2px solid #000;
+  width: auto;
 }
 
 .nav-active:focus {
@@ -46,15 +46,29 @@
 
 @media screen and (max-width: 1023px) {
   .header {
-    &-link {
-      font-size: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
+    &-link {
+      display: flex;
+      flex-wrap: nowrap;
+      font-size: 2.3em;
+    }
+  }
+  .nav-active {
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
-@media screen and (max-width: 773px) {
+@media screen and (max-width: 768px) {
   .header {
-    border: 1px solid red;
     display: flex;
     &-link {
       font-size: 2em;
