@@ -1,7 +1,8 @@
 .footer {
   background-color: black;
   text-align: center;
-  padding: 1% 0% 1% 0%;
+  padding: 5% 0% 5% 0%;
+  margin: 3% 0% 0% 0%;
 
   &-text {
     color: white;
@@ -9,10 +10,23 @@
 }
 
 // ? Responsive
+@media screen and (max-width: 1023px) {
+  .footer {
+    margin: 5% 0% 70% 0%;
+    flex-direction: column;
+
+    &-text {
+      width: 50%;
+      margin: auto;
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 5% 0% 5% 0%;
+    margin: 5% 0% 70% 0%;
+    flex-direction: column;
+    height: 20em;
 
     &-text {
       width: 50%;
