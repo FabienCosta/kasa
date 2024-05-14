@@ -7,13 +7,15 @@ const RentalInfo = ({ logement }) => {
       <div className="rental-box">
         <h2 className="rental-title">{logement.title}</h2>
         <p className="rental-place">{logement.location}</p>
-        {logement.tags.map((tag, index) => (
-          <p key={index} className="rental-tag">
-            {tag}
-          </p>
-        ))}
+        <div className="rental-tags">
+          {logement.tags.map((tag, index) => (
+            <p key={index} className="rental-tag">
+              {tag}
+            </p>
+          ))}
+        </div>
       </div>
-      <div className="rental-box bbox">
+      <div className=" idBox">
         <div className="rental-id">
           <p className="rental-name">{logement.host.name}</p>
           <img

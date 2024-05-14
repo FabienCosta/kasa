@@ -1,16 +1,26 @@
-.rank-box {
+.stars-box {
+  padding: 5% 0% 0% 0%;
+  font-size: 2em;
+  width: 100%;
   display: flex;
-  align-items: end;
+  justify-content: flex-end;
 }
 
+.fullStar {
+  color: #ff6060;
+  margin: 0% 0% 0% 5%;
+}
+
+.emptyStar {
+  color: #e3e3e3;
+  margin: 0% 0% 0% 5%;
+}
 // ? Responsive
 @media screen and (max-width: 768px) {
-  .rate-contenair {
-    width: 60%;
-    margin-bottom: 1em;
-  }
-
-  .etoile {
-    height: 1em;
+  .stars-box {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1em;
+    padding: 0% 0% 0% 0%;
   }
 }

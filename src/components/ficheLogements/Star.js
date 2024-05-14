@@ -1,25 +1,25 @@
 import React from "react";
-import fullStar from "../../assets/starRempli.png";
-import emptyStar from "../../assets/starVide.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Star = ({ rank }) => {
   const score = rank;
   const notes = [1, 2, 3, 4, 5];
   return (
-    <div className="rate-contenair">
+    <div className="stars-box">
       {notes.map((note) =>
         score >= note ? (
-          <img
+          <FontAwesomeIcon
             key={note.toString()}
-            className="etoile"
-            src={fullStar}
+            className="fullStar"
+            icon={faStar}
             alt="star"
           />
         ) : (
-          <img
+          <FontAwesomeIcon
             key={note.toString()}
-            className="etoile"
-            src={emptyStar}
+            className="emptyStar"
+            icon={faStar}
             alt="star"
           />
         )
