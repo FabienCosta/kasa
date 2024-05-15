@@ -1,8 +1,7 @@
 import React from "react";
-
+import { useParams } from "react-router-dom";
 import Carrousel from "../components/ficheLogements/Carrousel";
 import RentalInfo from "../components/ficheLogements/RentalInfo";
-import { useParams } from "react-router-dom";
 import datalodging from "../data/logements.json";
 import Collapsed from "../components/ficheLogements/Collapsed";
 import Error404 from "./Error404";
@@ -23,7 +22,9 @@ const Lodging = () => {
 
   return (
     <div>
-      <Carrousel slides={logement.pictures} />
+      <div className="slide">
+        <Carrousel slides={logement.pictures} />
+      </div>
       <RentalInfo logement={logement} />
       <div className="lodging-box">
         {/* ? je passe data et equipement comme props au composant enfant */}

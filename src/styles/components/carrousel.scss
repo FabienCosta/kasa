@@ -5,20 +5,20 @@
   width: 90%;
   position: relative;
   margin: auto;
-  border: 1px solid green;
+  height: 450px;
 
-  &-img {
+  .slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carrousel-img {
     background-size: cover;
     object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    // position: absolute;
-    // left: 0%;
-    // right: 0%;
-    // top: 100%;
-    // bottom: 0%;
-    height: 30em;
+    height: 100%;
     width: 100%;
     border-radius: 20px;
   }

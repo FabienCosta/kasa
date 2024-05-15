@@ -4,14 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  const footerText = `${currentYear} Kasa. All rights reserved`;
+
   return (
-    <div className="footer">
+    <footer className="footer">
       <img className="footer-img" src={logoWhite} alt="logo kasa" />
       <p className="footer-text">
-        <FontAwesomeIcon icon={faCopyright} />
-        2020 Kasa. All rigths reserved
+        <FontAwesomeIcon icon={faCopyright} /> {footerText}
       </p>
-    </div>
+    </footer>
   );
 };
 

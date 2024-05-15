@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useState } from "react";
 import letfArrow from "../../assets/arrow_left.png";
 import rightArrow from "../../assets/arrow_right.png";
@@ -18,20 +19,13 @@ const Carrousel = ({ slides }) => {
   return (
     <div className="carrousel">
       {slides.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? "slide active" : "slide"}
-            key={index}
-          >
-            {index === current && (
-              <img
-                src={slide}
-                alt="slides"
-                className={`carrousel-img ${index === current ? "active" : ""}`}
-              />
-            )}
-          </div>
-        );
+        if (index === current) {
+          return (
+            <div className="slide active" key={index}>
+              <img src={slide} alt="slides" className="carrousel-img active" />
+            </div>
+          );
+        }
       })}
       {/* conditions qui verifient si il y a moins d'une img par array et enleve les fleches et le numéro si c'est le cas */}
       {slides.length > 1 && (

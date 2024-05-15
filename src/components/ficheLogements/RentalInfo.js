@@ -2,13 +2,14 @@ import React from "react";
 import Star from "./Star";
 
 const RentalInfo = ({ logement }) => {
+  const { title, location, tags, host, rating } = logement;
   return (
     <div className="rental">
       <div className="rental-box">
-        <h2 className="rental-title">{logement.title}</h2>
-        <p className="rental-place">{logement.location}</p>
+        <h2 className="rental-title">{title}</h2>
+        <p className="rental-place">{location}</p>
         <div className="rental-tags">
-          {logement.tags.map((tag, index) => (
+          {tags.map((tag, index) => (
             <p key={index} className="rental-tag">
               {tag}
             </p>
@@ -17,14 +18,10 @@ const RentalInfo = ({ logement }) => {
       </div>
       <div className=" idBox">
         <div className="rental-id">
-          <p className="rental-name">{logement.host.name}</p>
-          <img
-            className="rental-img"
-            src={logement.host.picture}
-            alt={logement.host.name}
-          />
+          <p className="rental-name">{host.name}</p>
+          <img className="rental-img" src={host.picture} alt={host.name} />
         </div>
-        <Star rank={logement.rating} />
+        <Star rank={rating} />
       </div>
     </div>
   );

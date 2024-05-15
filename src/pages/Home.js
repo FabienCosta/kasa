@@ -14,7 +14,7 @@ const Home = () => {
             <Link
               to={{
                 pathname: `/lodging/${logement.id}`,
-                state: { logement: logement },
+                state: { logement }, // use shorthand syntax
               }}
             >
               <Cards cover={logement.cover} title={logement.title} />

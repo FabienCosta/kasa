@@ -11,15 +11,9 @@ const About = () => {
       <div className="collapse-banner"></div>
 
       <div className="collapse-value">
-        {data.map((item, index) => {
-          return (
-            <Collapsed
-              key={index}
-              data={data[index].title}
-              content={data[index].content}
-            />
-          );
-        })}
+        {data.map((item, index) => (
+          <Collapsed key={index} data={item.title} content={item.content} />
+        ))}
       </div>
     </div>
   );

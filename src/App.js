@@ -13,12 +13,14 @@ function App() {
       <BrowserRouter>
         {/* je place les composants Header et Footer dans browser router pour qu'ils s'affichent sur toutes les pages */}
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/lodging/:id" element={<Lodging />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<Error404 />} />
-        </Routes>
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/lodging/:id" element={<Lodging />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+        </main>
         <Footer />
       </BrowserRouter>
     </div>

@@ -12,7 +12,7 @@
 // ? Responsive
 @media screen and (max-width: 1023px) {
   .footer {
-    margin: 5% 0% 70% 0%;
+    margin: 5% 0% 0% 0%;
     flex-direction: column;
 
     &-text {
@@ -24,9 +24,8 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    margin: 5% 0% 70% 0%;
-    flex-direction: column;
-    height: 20em;
+    margin: 5% 0% 0% 0%;
+    padding: 10% 0% 10% 0%;
 
     &-text {
       width: 50%;
