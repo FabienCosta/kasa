@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-// ? je cree un composant enfant qui prend en props data et content et qui affiche data et content en fonction de l'etat du state isOpen
+// ? Composant enfant qui prend en props data et content
 const Collapsed = ({ data, content }) => {
-  // ? je cree un state pour gerer l'ouverture et la fermeture du composant enfant en fonction de l'etat du state isOpen qui est true par defaut
+  // ? Creation d'un state pour gerer l'ouverture et la fermeture
   const [isOpen, setIsOpen] = useState(true);
-  // ? je cree une fonction qui permet de changer l'etat du state isOpen en fonction de l'etat actuel de isOpen
+
+  // ? Creation d'une fonction qui permet de changer l'etat du state en manipulant le setter
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
