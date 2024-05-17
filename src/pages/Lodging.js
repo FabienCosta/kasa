@@ -7,7 +7,7 @@ import Collapsed from "../components/ficheLogements/Collapsed";
 import Error404 from "./Error404";
 
 const Lodging = () => {
-  // permet de recuperer la bonne fiche par l'id
+  // ? permet de recuperer la bonne fiche par l'id
   const { id } = useParams();
   // ? je recupere la fiche correspondant a l'id dans le fichier json
   const logement = datalodging.find((logement) => logement.id === id);
