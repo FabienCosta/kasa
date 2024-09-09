@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.99d7514f.css",
+    "main.js": "/kasa/static/js/main.bce59ace.js",
+    "static/media/kalen-emsley.png": "/kasa/static/media/kalen-emsley.abab3f12f4cb82f1dfa1.png",
+    "static/media/Banner-img.png": "/kasa/static/media/Banner-img.d00ae7dd3ef927bb988d.png",
+    "index.html": "/kasa/index.html",
+    "main.99d7514f.css.map": "/kasa/static/css/main.99d7514f.css.map",
+    "main.bce59ace.js.map": "/kasa/static/js/main.bce59ace.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99d7514f.css",
+    "static/js/main.bce59ace.js"
+  ]
+}
